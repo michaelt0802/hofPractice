@@ -489,7 +489,7 @@
           });
           it('should return total sum of all prices', function () {
             var total = sumTotal(testGrocery);
-            console.log(total);
+            //console.log(total);
             expect(total).to.equal(173.98);
           });
         });
@@ -536,7 +536,7 @@
           nativeMethods('reduce', false, function () {
             countMessagesPerUser(testTweets);
           });
-          noForLoops(countMessagesPerUser)
+          noForLoops(countMessagesPerUser);
           it('should return an object', function () {
             expect(countMessagesPerUser(testTweets)).to.be.an('object');
           });
